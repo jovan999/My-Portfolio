@@ -1,0 +1,342 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Jovan Smiljanic</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&family=Orbitron:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"
+    ></script>
+    <script defer src="js/main.js"></script>
+  </head>
+  <body>
+    <canvas></canvas>
+    <div class="section-1" id="section-1">
+      <div class="nav">
+        <div class="nav_left">
+          <div class="nav_left-up anchors">
+            <a href="#section-1" class="home">
+              <div class="nav_left-up-item">
+                <img src="./assets/home.svg" alt="home" />
+                <span class="nav_left-up-item-name">home</span>
+              </div>
+            </a>
+            <a href="#section-2">
+              <div class="nav_left-up-item">
+                <img src="./assets/employee-skills.svg" alt="skills" />
+                <span class="nav_left-up-item-name">skills</span>
+              </div>
+            </a>
+            <a href="#section-3">
+              <div class="nav_left-up-item">
+                <img src="./assets/project-launch.svg" alt="project" />
+                <span class="nav_left-up-item-name">project</span>
+              </div>
+            </a>
+
+            <a href="#section-4">
+              <div class="nav_left-up-item">
+                <img src="./assets/contact.svg" alt="contact" />
+                <span class="nav_left-up-item-name">contact me</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="nav_left-down">
+            <a
+              href="https://www.linkedin.com/in/jovan-smiljanic-298707192/"
+              target="_blank"
+            >
+              <div class="nav_left-up-item">
+                <img src="./assets/linkedin.svg" alt="linkedin" />
+                <span class="nav_left-up-item-name">linkedin</span>
+              </div>
+            </a>
+
+            <a href="https://github.com/jovan999" target="_blank">
+              <div class="nav_left-up-item">
+                <img src="./assets/github.svg" alt="github" />
+                <span class="nav_left-up-item-name">github</span>
+              </div>
+            </a>
+
+            <a
+              href="https://www.instagram.com/jovan.smiljanic99/"
+              target="_blank"
+            >
+              <div class="nav_left-up-item">
+                <img src="./assets/instagram.svg" alt="instagram" />
+                <span class="nav_left-up-item-name">instagram</span>
+              </div>
+            </a>
+
+            <a href="https://twitter.com/smiljko99?s=09" target="_blank">
+              <div class="nav_left-up-item">
+                <img src="./assets/twitter.svg" alt="twitter" />
+                <span class="nav_left-up-item-name">twitter</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="main mt-help">
+        <p class="main_name multipleStrings"></p>
+
+        <div class="main_buttons">
+          <a href="https://resume.io/r/7FiNOpGeR" class="anim1" target="_blank">
+            <div class="main_buttons-btn btn3">view my resume</div>
+          </a>
+          <a href="#section-4" class="anim2">
+            <div class="main_buttons-btn btn4">hire me</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="outer">
+        <div class="outer-nav-circle"></div>
+      </div>
+    </div>
+
+    <div class="section-2" id="section-2">
+      <div class="main_skills">
+        <div class="main_skills-about">
+          <h1>< about ></h1>
+          <p>
+            I am Jovan Smiljanic. I was born in Serbia . At the age of 18,I
+            moved to Slovenia
+            <span class="main_skills-about-hidden hidden"
+              >to study Hospitality and Tourism, but I soon realized that it was
+              not for me. I started learning programming at home by watching
+              online courses and making projects. I am not employed and
+              currently looking for a job.</span
+            >
+            <br />
+          </p>
+
+          <div class="about-btn">Read more</div>
+          <h1>< /about ></h1>
+        </div>
+
+        <div class="main_skills-skill">
+          <h1>< skills ></h1>
+
+          <div class="main_skills-skill-item">
+            <span>the skills i know are</span> JavaScript, HTML, CSS
+          </div>
+
+          <div class="main_skills-skill-item">
+            <span>framework i'm learning is</span> React
+          </div>
+
+          <div class="main_skills-skill-item">
+            <span>the libraries i use</span> jQuery, Bootstrap...
+          </div>
+
+          <div class="main_skills-skill-item">
+            <span>the tools i like to use</span> REST API, WordPress, Git,
+            Visual Studio Code, Material UI, Sass...
+          </div>
+
+          <h1>< /skills ></h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-3" id="section-3">
+      <div class="main-peojects">
+        <div class="main-peojects-item">
+          <a
+            href="https://best-cocktails.netlify.app/"
+            target="_blank"
+            class="imgLink"
+            ><img src="./assets/coctails.webp" alt=""
+          /></a>
+          <!-- <div class="main-peojects-item-info">
+            <p>
+              Web-application for coctail recipes made with JavaScript, HTML and
+              CSS. Using REST API for data and grid and flex-box for design.
+            </p>
+            <a
+              href="https://github.com/jovan999/JavaScript_Cocktail-Recipes"
+              target="_blank"
+            >
+              see code
+            </a>
+            <a href="https://best-cocktails.netlify.app/" target="_blank">
+              visit site
+            </a>
+          </div> -->
+        </div>
+
+        <div class="main-peojects-item">
+          <a
+            href="https://advanced-css-natours.netlify.app/"
+            target="_blank"
+            class="imgLink"
+            ><img src="./assets/natours.webp" alt=""
+          /></a>
+          <!-- <div class="main-peojects-item-info">
+            <p>
+              Website for a small travel business. Made using only HTML and CSS.
+              For style is used custom CSS-Grid
+            </p>
+            <a href="https://github.com/jovan999/CSS_Natours" target="_blank"
+              >see code</a
+            >
+            <a href="https://advanced-css-natours.netlify.app/" target="_blank"
+              >visit site</a
+            >
+          </div> -->
+        </div>
+
+        <div class="main-peojects-item">
+          <a
+            href="https://nexter-css.netlify.app/"
+            target="_blank"
+            class="imgLink"
+            ><img src="./assets/nexter.webp" alt=""
+          /></a>
+          <!-- <div class="main-peojects-item-info">
+            <p>
+              Real estate site with no functionality made for CSS-Grid exercise.
+              made using only HTML and CSS.
+            </p>
+            <a href="https://github.com/jovan999/CSS_Nexter" target="_blank"
+              >see code</a
+            >
+            <a href="https://nexter-css.netlify.app/" target="_blank"
+              >visit site</a
+            >
+          </div> -->
+        </div>
+
+        <div class="main-peojects-item mt-project">
+          <a
+            href="https://trillo-flex-box-css.netlify.app/"
+            target="_blank"
+            class="imgLink"
+          >
+            <img src="./assets/trillo.webp" alt=""
+          /></a>
+          <!-- <div class="main-peojects-item-info">
+            <p>
+              Simple online booking site. For now its only hotel page done. Its
+              made using only HTML and CSS. Using CSS-Flex-box for style.
+            </p>
+            <a href="https://github.com/jovan999/CSS_Trillo" target="_blank"
+              >see code</a
+            >
+            <a href="https://trillo-flex-box-css.netlify.app/" target="_blank"
+              >visit site</a
+            >
+          </div> -->
+        </div>
+
+        <div class="main-peojects-item mt-project">
+          <img src="./assets/cookbook.webp" alt="" />
+          <!-- <div class="main-peojects-item-info">
+            <p>
+              Application for food recipes made in WordPress. All recipes and
+              pictures using for the site are mine. The site is still under
+              construction.
+            </p>
+            <a
+              href="https://github.com/jovan999/WordPress_Food-Recipes-book"
+              target="_blank"
+              >see code</a
+            >
+          </div> -->
+        </div>
+
+        <div class="main-peojects-item mt-project">
+          <img src="./assets/spstrani.webp" alt="" />
+          <!-- <div class="main-peojects-item-info">
+            <p>
+              Business development site for the client. Bootstrap was used to
+              create the site.
+            </p>
+            <a href="https://github.com/jovan999/Landing-page" target="_blank"
+              >see code</a
+            >
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="section-4" id="section-4">
+      <div class="contact">
+        <div class="contact-form">
+          <h1>let's talk</h1>
+
+          <form action="https://formspree.io/f/mzbybova" method="POST">
+            <label for="name">name</label>
+            <input name="name" type="text" id="name" required />
+
+            <label for="email">email</label>
+            <input name="email" type="email" id="email" required />
+
+            <label for="message">message</label>
+            <textarea
+              name="message"
+              type="text"
+              id="message"
+              cols="10"
+              rows="5"
+              required
+            ></textarea>
+
+            <button type="submit" class="submit">submit</button>
+          </form>
+        </div>
+        <div class="contact-map">
+          <div id="map"></div>
+          <div class="info">
+            <ul>
+              <li>email: smiljko99@gmail.com</li>
+              <li>phone: +386 30 760 375</li>
+              <li>birthdate: 05.12.1999.</li>
+              <li>address: ljubljana, slovenia</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup">
+      <div class="popup__container">
+        <h1>Naziv projekta</h1>
+        <img src="./assets/spstrani.webp" alt="" />
+
+        <div class="popup__container-info">
+          <p>
+            Business development site for the client. Bootstrap was used to
+            create the site.
+          </p>
+          <a href="https://github.com/jovan999/Landing-page" target="_blank"
+            >see code</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
