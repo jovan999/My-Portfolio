@@ -12,6 +12,32 @@ $(".about-btn").on("click", function () {
   $(this).css("display", "none");
 });
 
+$(".mt-project-click-1").on("click", function () {
+  $(".popup-1").css("display", "block");
+});
+$(".mt-project-click-2").on("click", function () {
+  $(".popup-2").css("display", "block");
+});
+$(".mt-project-click-3").on("click", function () {
+  $(".popup-3").css("display", "block");
+});
+
+$(".mt-project-click-4").on("click", function () {
+  $(".popup-4").css("display", "block");
+});
+
+$(".mt-project-click-5").on("click", function () {
+  $(".popup-5").css("display", "block");
+});
+
+$(".mt-project-click-6").on("click", function () {
+  $(".popup-6").css("display", "block");
+});
+
+$(".close-btn").on("click", function () {
+  $(".popup").css("display", "none");
+});
+
 // map
 const map = L.map("map").setView([46.065341, 14.4914832], 12);
 

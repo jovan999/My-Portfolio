@@ -33,7 +33,13 @@ canvas {
   top: 0;
   height: 100vh;
   width: 60px;
-  background-color: white;
+  // background-color: white;
+
+  background: rgba(255, 255, 255, 0.65);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   z-index: 1000;
 }
 @media only screen and (max-width: 600px) {
@@ -140,7 +146,7 @@ canvas {
   height: 50px;
   position: fixed;
   top: 5%;
-  right: 10%;
+  right: 4%;
 }
 @media only screen and (max-width: 600px) {
   .outer {
@@ -148,25 +154,28 @@ canvas {
   }
 }
 .outer-nav-circle {
-  height: 40px;
+  height: 100%;
   width: 5px;
   background-color: white;
+
   position: absolute;
+  top: 0;
+  left: 0;
   transform: rotate(90deg) translate(-50%, -50%);
   transition: all 0.5s;
 }
 .outer-nav-circle::before {
   content: "";
-  height: 40px;
-  width: 5px;
+  height: 80%;
+  width: 100%;
   display: block;
   background-color: white;
   transform: translatex(-1.5rem);
 }
 .outer-nav-circle::after {
   content: "";
-  height: 40px;
-  width: 5px;
+  height: 80%;
+  width: 100%;
   display: block;
   background-color: white;
   transform: translatex(1.5rem);
@@ -175,10 +184,15 @@ canvas {
   transition: all 0.5s;
 }
 .outer:hover .outer-nav-circle {
-  transform: rotate(45deg);
+  transform: rotate(45deg) translate(-50%, -50%);
+
+  position: absolute;
+  top: 50%;
+  left: 20%;
 }
 .outer:hover .outer-nav-circle::after {
   transform: rotate(90deg);
+  height: 100%;
 }
 .outer:hover .outer-nav-circle::before {
   display: none;
@@ -209,7 +223,7 @@ canvas {
 .section-1 {
   display: flex;
   flex-direction: row;
-  min-height: 100%;
+  min-height: 100vh;
   width: 100%;
 }
 .main {
@@ -300,7 +314,7 @@ canvas {
   height: 380%;
 }
 .section-2 {
-  min-height: 100%;
+  min-height: 100vh;
   width: 100%;
   display: flex;
 }
@@ -309,7 +323,9 @@ canvas {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width: 80%;
+
+  flex-wrap: wrap;
+  width: 90%;
   margin: auto;
 }
 @media only screen and (max-width: 900px) {
@@ -318,31 +334,25 @@ canvas {
   }
 }
 .main_skills-about {
-  width: 30%;
+  width: 35%;
   color: white;
-  font-size: 2.2rem;
+  font-size: 2rem;
   transform: translateY(5rem);
 
-  letter-spacing: 1.7px;
+  letter-spacing: 1.3px;
   line-height: 1.2;
   hyphens: auto;
 }
 @media only screen and (max-width: 1100px) {
   .main_skills-about {
-    width: 55%;
-    margin-right: 2rem;
-  }
-}
-@media only screen and (max-width: 900px) {
-  .main_skills-about {
     width: 80%;
-    margin-right: 0;
   }
 }
+
 @media only screen and (max-width: 600px) {
   .main_skills-about {
     width: 100%;
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 }
 .main_skills-about h1 {
@@ -350,35 +360,26 @@ canvas {
   margin: 6rem 0;
   font-style: italic;
 }
-@media only screen and (max-width: 900px) {
-  .main_skills-about h1 {
-    margin: 3rem 0;
-  }
-}
 .main_skills-skill {
-  width: 45%;
+  width: 40%;
   color: white;
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 500;
   transform: translateY(-5rem);
   line-height: 1.6;
 }
 @media only screen and (max-width: 1100px) {
   .main_skills-skill {
-    width: 55%;
-  }
-}
-@media only screen and (max-width: 900px) {
-  .main_skills-skill {
     width: 80%;
     margin-top: 4rem;
   }
 }
+
 @media only screen and (max-width: 600px) {
   .main_skills-skill {
     width: 100%;
     margin-top: 7rem;
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 }
 .main_skills-skill-item span {
@@ -390,11 +391,7 @@ canvas {
   margin: 6rem 0;
   font-style: italic;
 }
-@media only screen and (max-width: 900px) {
-  .main_skills-skill h1 {
-    margin: 3rem 0;
-  }
-}
+
 .hidden {
   display: none;
 }
@@ -409,7 +406,7 @@ canvas {
 }
 .section-3 {
   width: 100%;
-  min-height: 100%;
+  min-height: 100vh;
   display: flex;
 }
 .main-peojects {
@@ -427,6 +424,8 @@ canvas {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  cursor: pointer;
 }
 .main-peojects-item img {
   width: 400px;
@@ -437,47 +436,12 @@ canvas {
     width: 350px;
   }
 }
-.main-peojects-item-info {
-  width: 70%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.main-peojects-item-info p {
-  font-size: 1.7rem;
-  color: white;
-  margin-bottom: 2rem;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-}
-.main-peojects-item-info a {
-  text-decoration: none;
-  color: white;
-  z-index: 50;
-  font-size: 1.5rem;
-  padding: 7px 12px;
-  border: 2px solid #75acff;
-  display: flex;
-  justify-content: center;
-}
-.main-peojects-item-info a:hover {
-  background-color: #75acff;
-  color: black;
-  font-weight: 600;
-}
-.main-peojects-item-info a:not(:last-child) {
-  margin-bottom: 1rem;
-}
-.imgLink {
-  z-index: 200;
-}
 .mt-project {
   margin-top: 4rem;
 }
 .section-4 {
   width: 100%;
-  min-height: 100%;
+  min-height: 100vh;
   display: flex;
 }
 .contact {
@@ -487,19 +451,32 @@ canvas {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.349);
-  border-radius: 3px;
+
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
   padding: 4rem 0;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1300px) {
   .contact {
     width: 80%;
   }
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1000px) {
   .contact {
+    width: 70%;
     flex-direction: column;
-    margin-top: 6rem;
+    margin-top: 12rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contact {
+    width: 90%;
   }
 }
 .contact-form {
@@ -530,17 +507,23 @@ form label {
 }
 form input,
 form textarea {
-  background-color: rgba(255, 255, 255, 0.822);
-  border: none;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 2px 8px 0 #75b1ff;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
   font-size: 20px;
-  border-radius: 3px;
   padding: 15px 20px;
   margin-bottom: 2rem;
   font-family: inherit;
   border-bottom: 3px solid transparent;
+  color: white;
 }
 form input:focus,
 form textarea:focus {
+  background: rgba(255, 255, 255, 0.45);
   outline: none;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
   border-bottom: 3px solid #12aa12;
@@ -553,13 +536,22 @@ form .submit {
   display: flex;
   align-self: center;
   font-size: 2rem;
-  color: #75acff;
-  border: 1px solid #000;
+  color: white;
   padding: 15px 40px;
   cursor: pointer;
-  border-radius: 3px;
   font-weight: 600;
   outline: none;
+
+  background: rgba(255, 255, 255, 0.55);
+  box-shadow: 0 2px 8px 0 #75b1ff;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 .contact-map {
   width: 100%;
@@ -567,6 +559,10 @@ form .submit {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media only screen and (max-width: 1000px) {
+    margin-top: 4rem;
+  }
 }
 #map {
   width: 80%;
@@ -574,11 +570,7 @@ form .submit {
   border-radius: 15px;
   margin-bottom: 2rem;
 }
-@media only screen and (max-width: 850px) {
-  #map {
-    margin-top: 2rem;
-  }
-}
+
 .info {
   font-size: 1.7rem;
   font-weight: 500;
@@ -627,60 +619,127 @@ form .submit {
 .popup {
   width: 100vw;
   height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
 
   position: fixed;
   top: 0;
   left: 0;
   z-index: 10000;
 
-  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
 
   &__container {
     width: 65%;
-    height: 50%;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 3rem 5rem;
 
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
-    background-color: white;
-
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
-    img {
-      width: 30%;
-      height: 50%;
-
-      position: relative;
-      top: 20%;
-      left: 2%;
+    &-title {
+      position: absolute;
+      font-size: 1.5rem;
     }
 
-    &-info {
-      width: 70%;
+    &-content {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      flex-direction: row;
 
-      P {
-        color: black;
-        font-size: 1.7rem;
-        margin-bottom: 2rem;
+      &-img {
+        width: 30%;
+        height: 100%;
+        margin: auto 0;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      &-info {
+        width: 40%;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+
+        P {
+          color: black;
+          font-size: 1.7rem;
+          margin-bottom: 2rem;
+          display: flex;
+          flex-direction: column;
+        }
       }
+
+      &-img-2 {
+        width: 30%;
+        height: 100%;
+        margin: auto 0;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    &-btn {
+      display: flex;
+      justify-content: center;
       a {
         text-decoration: none;
         color: rgb(0, 0, 0);
         z-index: 50;
         font-size: 1.5rem;
-        padding: 7px 12px;
+        padding: 10px 25px;
         border: 2px solid #75acff;
-        display: flex;
-        justify-content: center;
       }
     }
+  }
+}
+
+.close-btn {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-self: flex-end;
+}
+.close {
+  height: 100%;
+  width: 100%;
+
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    width: 0.5rem;
+    height: 3rem;
+    display: block;
+    background-color: black;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &::after {
+    content: "";
+    width: 0.5rem;
+    height: 3rem;
+    display: block;
+    background-color: black;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(135deg);
   }
 }
