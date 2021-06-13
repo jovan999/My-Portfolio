@@ -3,6 +3,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is my Portfolio site. I am Front-end Web Developer."
+    />
 
     <title>Jovan Smiljanic</title>
 
@@ -20,12 +24,14 @@
     <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script
       defer
-      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-    ></script>
-    <script
-      defer
       src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"
     ></script>
+
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    ></script>
+
     <script defer src="js/main.js"></script>
   </head>
   <body>
@@ -36,26 +42,38 @@
           <div class="nav_left-up anchors">
             <a href="#section-1" class="home">
               <div class="nav_left-up-item">
-                <img src="./assets/home.svg" alt="home" />
+                <img loading="lazy" src="./assets/home.svg" alt="projecthome" />
                 <span class="nav_left-up-item-name">home</span>
               </div>
             </a>
             <a href="#section-2">
               <div class="nav_left-up-item">
-                <img src="./assets/employee-skills.svg" alt="skills" />
+                <img
+                  loading="lazy"
+                  src="./assets/employee-skills.svg"
+                  alt="projectskills"
+                />
                 <span class="nav_left-up-item-name">skills</span>
               </div>
             </a>
             <a href="#section-3">
               <div class="nav_left-up-item">
-                <img src="./assets/project-launch.svg" alt="project" />
+                <img
+                  loading="lazy"
+                  src="./assets/project-launch.svg"
+                  alt="projectproject"
+                />
                 <span class="nav_left-up-item-name">project</span>
               </div>
             </a>
 
             <a href="#section-4">
               <div class="nav_left-up-item">
-                <img src="./assets/contact.svg" alt="contact" />
+                <img
+                  loading="lazy"
+                  src="./assets/contact.svg"
+                  alt="projectcontact"
+                />
                 <span class="nav_left-up-item-name">contact me</span>
               </div>
             </a>
@@ -67,14 +85,22 @@
               target="_blank"
             >
               <div class="nav_left-up-item">
-                <img src="./assets/linkedin.svg" alt="linkedin" />
+                <img
+                  loading="lazy"
+                  src="./assets/linkedin.svg"
+                  alt="projectlinkedin"
+                />
                 <span class="nav_left-up-item-name">linkedin</span>
               </div>
             </a>
 
             <a href="https://github.com/jovan999" target="_blank">
               <div class="nav_left-up-item">
-                <img src="./assets/github.svg" alt="github" />
+                <img
+                  loading="lazy"
+                  src="./assets/github.svg"
+                  alt="projectgithub"
+                />
                 <span class="nav_left-up-item-name">github</span>
               </div>
             </a>
@@ -84,17 +110,15 @@
               target="_blank"
             >
               <div class="nav_left-up-item">
-                <img src="./assets/instagram.svg" alt="instagram" />
+                <img
+                  loading="lazy"
+                  src="./assets/instagram.svg"
+                  alt="projectinstagram"
+                />
                 <span class="nav_left-up-item-name">instagram</span>
               </div>
             </a>
-
-            <a href="https://twitter.com/smiljko99?s=09" target="_blank">
-              <div class="nav_left-up-item">
-                <img src="./assets/twitter.svg" alt="twitter" />
-                <span class="nav_left-up-item-name">twitter</span>
-              </div>
-            </a>
+            <a href=""></a>
           </div>
         </div>
       </div>
@@ -103,8 +127,13 @@
         <p class="main_name multipleStrings"></p>
 
         <div class="main_buttons">
-          <a href="https://resume.io/r/7FiNOpGeR" class="anim1" target="_blank">
-            <div class="main_buttons-btn btn3">view my resume</div>
+          <a
+            href="https://resume.io/r/7FiNOpGeR/download.pdf"
+            download
+            class="anim1"
+            target="_blank"
+          >
+            <div class="main_buttons-btn btn3">download my resume</div>
           </a>
           <a href="#section-4" class="anim2">
             <div class="main_buttons-btn btn4">hire me</div>
@@ -119,27 +148,18 @@
 
     <div class="section-2" id="section-2">
       <div class="main_skills">
-        <div class="main_skills-about">
-          <h1>< about ></h1>
-          <p>
-            I am Jovan Smiljanic. I was born in Serbia . At the age of 18,I
-            moved to Slovenia
-            <span class="main_skills-about-hidden hidden"
-              >to study Hospitality and Tourism, but I soon realized that it was
-              not for me. I started learning programming at home by watching
-              online courses and making projects. I am not employed and
-              currently looking for a job.</span
-            >
+        <div class="main_skills-exp">
+          <h2>< experience ></h2>
+          <p class="main_skills-skill-item">
+            Website Administrator at AdStar - Digital Agency (freelance)
             <br />
+            <span> Mar 2021 - present </span>
           </p>
 
-          <div class="about-btn">Read more</div>
-          <h1>< /about ></h1>
+          <h2>< /experience ></h2>
         </div>
-
         <div class="main_skills-skill">
-          <h1>< skills ></h1>
-
+          <h2>< skills ></h2>
           <div class="main_skills-skill-item">
             <span>the skills i know are</span> JavaScript, HTML, CSS
           </div>
@@ -154,10 +174,27 @@
 
           <div class="main_skills-skill-item">
             <span>the tools i like to use</span> REST API, WordPress, Git,
-            Visual Studio Code, Material UI, Sass...
+            Material UI, Sass...
           </div>
 
-          <h1>< /skills ></h1>
+          <h2>< /skills ></h2>
+        </div>
+
+        <div class="main_skills-about">
+          <h2>< about ></h2>
+          <p>
+            I am Jovan Smiljanic. I was born in Serbia . At the age of 18,I
+            moved to Slovenia
+            <span class="main_skills-about-hidden hidden"
+              >to study Hospitality and Tourism, but I soon realized that it was
+              not for me. I started learning programming at home by watching
+              online courses and making projects. I am currently looking for a
+              part-time job.</span
+            >
+            <br />
+          </p>
+          <div class="about-btn">Read more</div>
+          <h2>< /about ></h2>
         </div>
       </div>
     </div>
@@ -165,27 +202,27 @@
     <div class="section-3" id="section-3">
       <div class="main-peojects">
         <div class="main-peojects-item mt-project-click-1">
-          <img src="./assets/coctails.webp" alt="" />
+          <img loading="lazy" src="./assets/coctails.webp" alt="project" />
         </div>
 
         <div class="main-peojects-item mt-project-click-2">
-          <img src="./assets/natours.webp" alt="" />
+          <img loading="lazy" src="./assets/natours.webp" alt="project" />
         </div>
 
         <div class="main-peojects-item mt-project-click-3">
-          <img src="./assets/nexter.webp" alt="" />
+          <img loading="lazy" src="./assets/nexter.webp" alt="project" />
         </div>
 
         <div class="main-peojects-item mt-project mt-project-click-4">
-          <img src="./assets/trillo.webp" alt="" />
+          <img loading="lazy" src="./assets/trillo.webp" alt="project" />
         </div>
 
         <div class="main-peojects-item mt-project mt-project-click-5">
-          <img src="./assets/cookbook.webp" alt="" />
+          <img loading="lazy" src="./assets/cookbook.webp" alt="project" />
         </div>
 
         <div class="main-peojects-item mt-project mt-project-click-6">
-          <img src="./assets/spstrani.webp" alt="" />
+          <img loading="lazy" src="./assets/spstrani.webp" alt="project" />
         </div>
       </div>
     </div>
@@ -193,7 +230,7 @@
     <div class="section-4" id="section-4">
       <div class="contact">
         <div class="contact-form">
-          <h1>let's talk</h1>
+          <h2>let's talk</h2>
 
           <form action="https://formspree.io/f/mzbybova" method="POST">
             <label for="name">name</label>
@@ -235,12 +272,12 @@
           <div class="close"></div>
         </div>
         <div class="popup__container-title">
-          <h1>Best Cocktails</h1>
+          <h2>Best Cocktails</h2>
         </div>
 
         <div class="popup__container-content">
           <div class="popup__container-content-img">
-            <img src="./assets/coctails.webp" alt="" />
+            <img loading="lazy" src="./assets/coctails.webp" alt="project" />
           </div>
 
           <div class="popup__container-content-info">
@@ -251,7 +288,11 @@
           </div>
 
           <div class="popup__container-content-img-2">
-            <img src="./assets/coctails-phone.webp" alt="" />
+            <img
+              loading="lazy"
+              src="./assets/coctails-phone.webp"
+              alt="project"
+            />
           </div>
         </div>
 
@@ -275,12 +316,12 @@
           <div class="close"></div>
         </div>
         <div class="popup__container-title">
-          <h1>Natours</h1>
+          <h2>Natours</h2>
         </div>
 
         <div class="popup__container-content">
           <div class="popup__container-content-img">
-            <img src="./assets/natours.webp" alt="" />
+            <img loading="lazy" src="./assets/natours.webp" alt="project" />
           </div>
 
           <div class="popup__container-content-info">
@@ -291,7 +332,11 @@
           </div>
 
           <div class="popup__container-content-img-2">
-            <img src="./assets/natours-phone.webp" alt="" />
+            <img
+              loading="lazy"
+              src="./assets/natours-phone.webp"
+              alt="project"
+            />
           </div>
         </div>
 
@@ -312,12 +357,12 @@
           <div class="close"></div>
         </div>
         <div class="popup__container-title">
-          <h1>Nexter</h1>
+          <h2>Nexter</h2>
         </div>
 
         <div class="popup__container-content">
           <div class="popup__container-content-img">
-            <img src="./assets/nexter.webp" alt="" />
+            <img loading="lazy" src="./assets/nexter.webp" alt="project" />
           </div>
 
           <div class="popup__container-content-info">
@@ -328,7 +373,11 @@
           </div>
 
           <div class="popup__container-content-img-2">
-            <img src="./assets/nexter-phone.webp" alt="" />
+            <img
+              loading="lazy"
+              src="./assets/nexter-phone.webp"
+              alt="project"
+            />
           </div>
         </div>
 
@@ -349,12 +398,12 @@
           <div class="close"></div>
         </div>
         <div class="popup__container-title">
-          <h1>Trillo</h1>
+          <h2>Trillo</h2>
         </div>
 
         <div class="popup__container-content">
           <div class="popup__container-content-img">
-            <img src="./assets/trillo.webp" alt="" />
+            <img loading="lazy" src="./assets/trillo.webp" alt="project" />
           </div>
 
           <div class="popup__container-content-info">
@@ -365,7 +414,7 @@
           </div>
 
           <div class="popup__container-content-img-2">
-            <img src="./assets/trilp-phone.webp" alt="" />
+            <img loading="lazy" src="./assets/trilp-phone.webp" alt="project" />
           </div>
         </div>
 
@@ -386,12 +435,12 @@
           <div class="close"></div>
         </div>
         <div class="popup__container-title">
-          <h1>My Cookbook</h1>
+          <h2>My Cookbook</h2>
         </div>
 
         <div class="popup__container-content">
           <div class="popup__container-content-img">
-            <img src="./assets/cookbook.webp" alt="" />
+            <img loading="lazy" src="./assets/cookbook.webp" alt="project" />
           </div>
 
           <div class="popup__container-content-info">
@@ -403,7 +452,11 @@
           </div>
 
           <div class="popup__container-content-img-2">
-            <img src="./assets/cookbook-phone.webp" alt="" />
+            <img
+              loading="lazy"
+              src="./assets/cookbook-phone.webp"
+              alt="project"
+            />
           </div>
         </div>
 
@@ -423,12 +476,12 @@
           <div class="close"></div>
         </div>
         <div class="popup__container-title">
-          <h1>Landing page</h1>
+          <h2>Landing page</h2>
         </div>
 
         <div class="popup__container-content">
           <div class="popup__container-content-img">
-            <img src="./assets/spstrani.webp" alt="" />
+            <img loading="lazy" src="./assets/spstrani.webp" alt="project" />
           </div>
 
           <div class="popup__container-content-info">
@@ -439,7 +492,11 @@
           </div>
 
           <div class="popup__container-content-img-2">
-            <img src="./assets/landing-phone.webp" alt="" />
+            <img
+              loading="lazy"
+              src="./assets/landing-phone.webp"
+              alt="project"
+            />
           </div>
         </div>
 
