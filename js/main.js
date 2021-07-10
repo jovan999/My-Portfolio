@@ -202,7 +202,7 @@ function render() {
 }
 
 new TypeIt(".multipleStrings", {
-  strings: ["Hi, I am Jovan Smiljanic,", "Front-end Developer."],
+  strings: ["Hello, My name is Jovan,", "I am Frontend Developer."],
   speed: 80,
   waitUntilVisible: true,
   loop: true,
